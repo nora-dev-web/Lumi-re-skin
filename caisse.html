@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passer à la Caisse | Lumière Skin</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <main class="checkout-page">
+        <div class="checkout-container">
+            
+            <div class="billing-details">
+                <h2><i class="fas fa-shipping-fast"></i> Informations de Livraison</h2>
+                <form id="final-order-form">
+                    <div class="input-box">
+                        <label>Nom et Prénom</label>
+                        <input type="text" id="cust-name" placeholder="Ex: Nora Mahmoudi" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Numéro de Téléphone</label>
+                        <input type="tel" id="cust-phone" placeholder="06XXXXXXXX" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Wilaya / Commune</label>
+                        <input type="text" id="cust-city" placeholder="Ex: Tizi Ouzou, Nouvelle Ville" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Adresse Complète</label>
+                        <textarea id="cust-address" rows="3" placeholder="Cité, Rue, Numéro de maison" required></textarea>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <p><i class="fas fa-money-bill-wave"></i> <strong>Mode de paiement:</strong> Paiement à la livraison</p>
+                    </div>
+
+                    <button type="submit" class="btn-final-confirm">
+                        Confirmer la Commande <i class="fas fa-check-circle"></i>
+                    </button>
+                    <a href="shop.html" class="back-shop">← Continuer mes achats</a>
+                </form>
+            </div>
+
+            <div class="order-summary">
+                <h3>Votre Commande</h3>
+                <hr>
+                
+                <div id="checkout-items" class="items-list">
+                    </div>
+
+                <div class="total-section">
+                    <div class="total-row">
+                        <span>Sous-total:</span>
+                        <span id="subtotal">0 DA</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Livraison:</span>
+                        <span> Paiment à la livraison </span>
+                    </div>
+                    <hr>
+                    <div class="total-row grand-total">
+                        <span>Total à payer:</span>
+                        <span id="checkout-total">0 DA</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="commande.js"></script>
+</body>
+</html>

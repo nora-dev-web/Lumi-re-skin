@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumière Skin | Authentification</title>
+    <link rel="stylesheet" href="authentification.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+
+    <div class="auth-wrapper">
+        <div class="auth-image-side">
+            <div class="overlay">
+                <div class="auth-logo">Lumiére Skin</div>
+                <p>Découvrez la puissance de la nature pour votre peau.</p> 
+            </div>
+        </div>
+
+        <div class="auth-form-side">
+            <div class="auth-box">
+    <h2>Login</h2>
+    <p id="auth-subtitle">Heureux de vous revoir</p>
+    
+    <form>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="ex:noramahmoudi@gmail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Mot de passe</label>
+                        <input type="password" placeholder="********" required>
+                    </div>
+                    <div class="forgot-password-container">
+                      <a href="recuperation.html" class="forgot-password">Mot de passe oublié ?</a>
+                   </div>
+                    <button type="submit" class="btn-auth">Connecter</button>
+                </form>
+                 <p class="toggle-text">
+                <span id="switch-msg">Pas encore de compte ?</span> 
+                <a href="inscri.html" class="incription">S'inscrire</a>
+            </p>
+             <a href="index.html" class="back-home">← Retour à l'accueil</a>
+            </div>
+        </div>
+    </div>
+ <script src="authentification.js"></script>
+</body>
+</html>

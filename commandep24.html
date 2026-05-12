@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumière Skin | Commander</title>
+    <link rel="stylesheet" href="commande.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="logo">LUMIÈRE SKIN</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="authentification.html" >LOGIN</a></li>
+    </ul>
+</nav>
+    <section class="order-container">
+        <div class="product-detail">
+            <div class="product-image-large">
+                <img src="IMAGES PROJET/imagep24.jfif" alt="Produit">
+                <button class="nav-arrow prev" onclick="navigateProduct(-1)">&#10094;</button>
+                <button class="nav-arrow next" onclick="navigateProduct(1)">&#10095;</button>
+            </div>
+            
+            <div class="product-info-detail">
+                <h1>Gel Vitamine C et spray protection</h1>
+                <p class="price-detail">5000,00 DA Les deux produit</p>
+                <p class="description">
+                  ☀️ Touché Gel Vitamine C & Spray Protecteur : Un duo dynamique offrant une 
+                  protection solaire SPF 30 et 50 combinée
+                   aux bienfaits antioxydants de la vitamine C pour un teint protégé et éclatant.
+                </p>
+
+                 <form class="order-form" id="orderForm">
+                    <div class="input-group">
+                        <label>Quantité</label>
+                        <input type="number" value="1" min="1">
+                    </div>
+                    
+                    <button type="submit" class="btn-order">Confirmer la Commande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="commande.js"></script>
+</body>
+</html>

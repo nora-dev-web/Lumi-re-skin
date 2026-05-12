@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumière Skin | Inscription</title>
+    <link rel="stylesheet" href="inscri.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+    <style>
+        label {
+            display: inline-block;
+            width: 160px;
+            margin-bottom: 8px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select {
+            margin-bottom: 8px;
+        }
+        .section {
+            border-top: 1px solid #c7bbbb;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body class="auth-page"> <div class="auth-container">
+
+        <div class="auth-box">
+        <form action="#" method="POST" enctype="multipart/form-data">
+        <h2>Créer votre compte</h2>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom"><br>
+
+        <label for="prenom">Prenom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email"><br>
+
+        <label for="tel">Numéro de téléphone:</label>
+        <input type="tel" id="tel" name="telephone" placeholder="Entrez votre numéro"><br>
+
+        <label for="pass">Mot de passe:</label>
+        <input type="password" id="pass" name="mdp" placeholder="Entrez votre mot de passe"><br>
+
+        <label for="conf">Confirmer le Mot de passe:</label>
+        <input type="password" id="conf" name="conf_mdp" placeholder="Confirmez votre mot de pass">
+    </form>
+     <button type="submit">S'inscrire </button>
+     <script src="inscri.js"></script>
+</body>
+</html>

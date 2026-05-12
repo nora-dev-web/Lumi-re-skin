@@ -1,0 +1,137 @@
+.auth-page {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden; 
+}
+
+.auth-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.auth-image-side {
+    flex: 1; 
+    background: url('IMAGES PROJET/imagelo.jfif') center/cover no-repeat; 
+    position: relative;
+    display: none; 
+}
+
+@media (min-width: 768px) {
+    .auth-image-side { display: block; } 
+}
+
+.auth-image-side .overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.auth-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.auth-form-side {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F8F6; 
+}
+
+.auth-box {
+    width: 80%;
+    max-width: 400px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.03);
+}
+
+.auth-box h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #eee;
+    border-radius: 50px; 
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #cb91c4; 
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 14px;
+    background-color: #9f949d; 
+    color: white;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-auth:hover {
+    background-color: #9a9473; 
+}
+.forgot-password-container {
+    text-align: right; 
+    margin-bottom: 20px;
+    margin-top: -10px; 
+}
+
+.forgot-password {
+    font-size: 0.85rem;
+    color: #666;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.forgot-password:hover {
+    color: #9baba0; 
+    text-decoration: underline;
+}
+
+.auth-footer-links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #9baba0; 
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+
+#auth-subtitle {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

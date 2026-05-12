@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumière Skin | Boutique en ligne</title>
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<nav>
+    <div class="logo">Lumiére Skin</div>
+    <div class="search-container">
+    <input type="text" id="search-input" placeholder="Rechercher..." onkeyup="filterProducts()">
+    <i class="fas fa-search search-icon"></i>
+    </div>
+    <ul class="nav-links">
+        <li><a href="shop.html" class="active"></a></li>
+       <li class="user-icon-item">
+        <a href="authentification.html">
+            <i class="fa-regular fa-user"></i> </a>
+        </li>
+       <li class="cart-container">
+        <a href="panier.html" class="cart-wrapper">
+        <svg class="real-cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span id="cart-count">0</span>
+    </a>
+</li>
+    </ul>
+</nav>
+ <h2 class="section-title">Nos Produits</h2>
+ 
+   <section class="shop-container">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep1.jpeg" alt="Sérum">
+                   <button class="add-to-cart" onclick="commander('Sérum Vitamine C VICHY', '3500 DA', 'IMAGES PROJET/imagep1.jpeg', 'commandep1.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div> <h3>Sérum Vitamine C VICHY</h3>
+                  <p class="price">3500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep2.jpg" alt="Nettoyant">
+                    <button class="add-to-cart" onclick="commander('Gel Nettoyant Bioderma', '1800 DA', 'IMAGES PROJET/imagep2.jpg', 'commandep2.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                    </div>
+                <div class="product-info">
+                    <h3>Gel Nettoyant Bioderma</h3>
+                    <p class="price">1800,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep3.webp" alt="Crème">
+                      <button class="add-to-cart" onclick="commander('Créme hydratante Touché', '1250 DA', 'IMAGES PROJET/imagep3.webp', 'commandep3.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Crème Hydratante Touché</h3>
+                    <p class="price">1250,00 DA</p>
+                 </div>
+        </div>
+    </section>
+     <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep4.jfif" alt="écran">
+                    <button class="add-to-cart" onclick="commander('Ecran solaire Roche-Posay', '3500 DA', 'IMAGES PROJET/imagep4.jfif', 'commandep4.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Ecran solaire Roche-Posay</h3>
+                    <p class="price">3500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep5.jfif" alt="Créme">
+                     <button class="add-to-cart" onclick="commander('Cicaplast', '3800 DA', 'IMAGES PROJET/imagep5.jfif', 'commandep5.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Cicaplast créme</h3>
+                    <p class="price">3800,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep6.jfif" alt="Crème">
+                      <button class="add-to-cart" onclick="commander('Créme Avéne réparatrice', '3500 DA', 'IMAGES PROJET/imagep6.jfif', 'commandep6.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Créme réparatrice Avéne</h3>
+                    <p class="price">2500,00 DA G.F 3500,00 DA</p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep7.jfif" alt="ecran">
+                    <button class="add-to-cart" onclick="commander('EUCERIN', '4500 DA', 'IMAGES PROJET/imagep7.jfif', 'commandep7.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>EUCERIN</h3>
+                    <p class="price">4500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep8.jfif" alt="Ecran">
+                     <button class="add-to-cart" onclick="commander('Ecran total Beauty of Joseon', '5000 DA', 'IMAGES PROJET/imagep8.jfif', 'commandep8.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Ecran total Coréen Beauty of Joseon</h3>
+                    <p class="price">5000,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep9.jfif" alt="Sérum">
+                      <button class="add-to-cart" onclick="commander('Ordinary Peeling Solution', '2500 DA', 'IMAGES PROJET/imagep9.jfif', 'commandep9.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Ordinary Peeling Solution</h3>
+                    <p class="price">2500,00 DA</p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep10.jfif" alt="créme">
+                    <button class="add-to-cart" onclick="commander('Créme Hydratante 345', '3500 DA', 'IMAGES PROJET/imagep10.jfif', 'commandep10.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Créme Hydratante Coréene 345</h3>
+                    <p class="price">3500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep11.jfif" alt="Soin">
+                     <button class="add-to-cart" onclick="commander('Soin des yeux vitamin c', '4500 DA', 'IMAGES PROJET/imagep11.jfif', 'commandep11.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Soin des yeux vitamin c</h3>
+                    <p class="price">4500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep12.jfif" alt="Patchs">
+                    <button class="add-to-cart" onclick="commander('Patchs des yeux', '5500 DA', 'IMAGES PROJET/imagep12.jfif', 'commandep12.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>PATCHS Des Yeux</h3>
+                    <p class="price">5500,00 DA</p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep13.jfif" alt="micellar">
+                    <button class="add-to-cart" onclick="commander('Micellar water', '1500 DA', 'IMAGES PROJET/imagep13.jfif', 'commandep13.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Micellar water</h3>
+                    <p class="price">1500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep14.jfif" alt="Sérum">
+                     <button class="add-to-cart" onclick="commander('Sérum Anua niacinamide', '5000 DA', 'IMAGES PROJET/imagep14.jfif', 'commandep14.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Anua sérum Niacinamide</h3>
+                    <p class="price">5000,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep15.jfif" alt="Sérum">
+                      <button class="add-to-cart" onclick="commander('Sérum CENTELLA', '5000 DA', 'IMAGES PROJET/imagep15.jfif', 'commandep15.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Sérum CENTELLA</h3>
+                    <p class="price">5000,00 DA</p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep16.jfif" alt="Sérum">
+                    <button class="add-to-cart" onclick="commander('Sérum Ordinary Niacinamide', '2500 DA', 'IMAGES PROJET/imagep16.jfif', 'commandep16.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Sérum Ordinary Niacinamide</h3>
+                    <p class="price">2500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep17.jfif" alt="Nettoyant">
+                   <button class="add-to-cart" onclick="commander('Gel Nettoyant AQUA', '1800 DA', 'IMAGES PROJET/imagep17.jfif', 'commandep17.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Gel Nettoyant AQUA</h3>
+                    <p class="price">1800,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep18.jfif" alt="Crème">
+                     <button class="add-to-cart" onclick="commander('Créme Niacinamide', '4000 DA', 'IMAGES PROJET/imagep18.jfif', 'commandep18.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button>  
+                </div>
+                 <div class="product-info">
+                    <h3>Créme Niacinamide </h3>
+                    <p class="price">4000,00 DA</p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep19.jfif" alt="Créme">
+                    <button class="add-to-cart" onclick="commander('RETINOL', '3000 DA', 'IMAGES PROJET/imagep19.jfif', 'commandep19.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>RETINOL</h3>
+                    <p class="price">3000,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep20.jfif" alt="Glycolic">
+                    <button class="add-to-cart" onclick="commander('Ordinary Glycolic Acide', '4500 DA', 'IMAGES PROJET/imagep20.jfif', 'commandep20.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Ordinary Glycolic Acide</h3>
+                    <p class="price">4500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep21.jfif" alt="Eau">
+                     <button class="add-to-cart" onclick="commander('Eau Thermale Avéne', '3500 DA', 'IMAGES PROJET/imagep21.jfif', 'commandep21.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Eau thermale Avéne</h3>
+                    <p class="price">3500,00 DA</p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep22.jfif" alt="Masque">
+                    <button class="add-to-cart" onclick="commander('Masque collagen Medicube', '5000 DA', 'IMAGES PROJET/imagep22.jfif', 'commandep22.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Masque collagen Medicube</h3>
+                    <p class="price">5000,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep23.jfif" alt="créme">
+                    <button class="add-to-cart" onclick="commander('Créme Cosex', '2500 DA', 'IMAGES PROJET/imagep23.jfif', 'commandep23.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Créme coréene cosrx </h3>
+                    <p class="price">2500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep24.jfif" alt="GEL&spray">
+                      <button class="add-to-cart" onclick="commander('Gel vitamine c et spray protrction', '5000 DA', 'IMAGES PROJET/imagep24.jfif', 'commandep24.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Gel vitamine c et spray protection</h3>
+                    <p class="price">5000,00 DA Les deux produits </p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep25.jfif" alt="Ecran">
+                    <button class="add-to-cart" onclick="commander('Ecran solaire Bioderma', '4500 DA', 'IMAGES PROJET/imagep25.jfif', 'commandep25.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Ecran solaire Bioderma</h3>
+                    <p class="price">4500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep26.jfif" alt="créme">
+             <button class="add-to-cart" onclick="commander('Cerave créme hydratnate visage', '3900 DA', 'IMAGES PROJET/imagep26.jfif', 'commandep26.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Cerave Créme hydratante visage</h3>
+                    <p class="price">3900,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep27.jfif" alt="sérum">
+                     <button class="add-to-cart" onclick="commander('Sérum RETINOL INTENSE', '4950 DA', 'IMAGES PROJET/imagep27.jfif', 'commandep27.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Sérum RETINOL INTENSE</h3>
+                    <p class="price">4950,00 DA</p>
+            </div>
+        </div>
+    </section>
+      <section class="shop-container">
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep28.jfif" alt="Masque">
+                    <button class="add-to-cart" onclick="commander('New skin mask', '5500 DA', 'IMAGES PROJET/imagep28.jfif', 'commandep28.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Masque New Skin Resolution "Gel" </h3>
+                    <p class="price">5500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep29.jfif" alt="Nettoyant">
+                    <button class="add-to-cart" onclick="commander('Gel Nettoyant Anua', '3500 DA', 'IMAGES PROJET/imagep29.jfif', 'commandep29.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                <div class="product-info">
+                    <h3>Gel Nettoyant Coréene Anua</h3>
+                    <p class="price">3500,00 DA</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMAGES PROJET/imagep30.jfif" alt="Sérum">
+                     <button class="add-to-cart" onclick="commander('Sérum Vitamin Illuminating', '5500 DA', 'IMAGES PROJET/imagep30.jfif', 'commandep30.html')">Ajouter <i class="fas fa-shopping-cart"></i> </button> 
+                </div>
+                 <div class="product-info">
+                    <h3>Sérum Vitamin Illuminating</h3>
+                    <p class="price">5500,00 DA</p>
+            </div>
+        </div>
+    </section>
+   
+    <script src="commande.js"></script>
+</body>
+</html>
