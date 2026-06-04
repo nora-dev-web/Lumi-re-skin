@@ -15,9 +15,7 @@ LUMIÈRE SKIN est une plateforme e-commerce moderne dédiée aux produits de soi
 Système de Panier complet : Ajout, suppression et calcul automatique du prix d’achat il suffit de cliquer sur “OK” apres la confirmation d’achats (ils ajoutent au panier).
 Authentification sécurisée : Pages de Login, Inscription et récupération de mot de passe.
 Design Responsive : Site optimisé pour ordinateurs, tablettes et smartphones.
-Expérience d'achat : Parcours client allant de la sélection du produit jusqu'à la page de caisse (Checkout)."En conclusion, cesimple projet de plateforme e-commerce pour Lumière Skin illustre une intégration réussie entre un design épuré et une logique de programmation robuste. Grâce à l'utilisation du stockage local et à une architecture modulaire en Java Script, nous avons réussi Al-Hamdou-lilah à créer une expérience utilisateur fluide et interactive, répondant aux standards actuels du Web Dynamique."
-
-Je vous remercie pour votre attention et votre lecture..! {Asalam-3alaykum}.
+Expérience d'achat : Parcours client allant de la sélection du produit jusqu'à la page de caisse (Checkout).
 
 "En conclusion, cesimple projet de plateforme e-commerce pour Lumière Skin illustre une intégration réussie entre un design épuré et une logique de programmation robuste. Grâce à l'utilisation du stockage local et à une architecture modulaire en Java Script, nous avons réussi Al-Hamdou-lilah à créer une expérience utilisateur fluide et interactive, répondant aux standards actuels du Web Dynamique."
 
