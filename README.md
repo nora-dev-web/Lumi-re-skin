@@ -1,3 +1,5 @@
+Mahmoudi Nora 
+Cher Professeur de la matiére:"Mme Lila BOUSNINA".
 PROJET dev web : LUMIÈRE SKIN
 
 LUMIÈRE SKIN est une plateforme e-commerce moderne dédiée aux produits de soins de la peau (Skincare). Le projet vise à offrir une expérience utilisateur fluide, élégante et intuitive, mettant en valeur la pureté et l'efficacité des produits naturels.pour cele j’ai utilisee vscode pour le resoudre avec trois techniques ( 1/HTML : Structure sémantique du site.2/ CSS : Design moderne, Flexbox, animations et responsive design. 3/JavaScript : Gestion de la logique du panier, recherche dynamique et authentification).
